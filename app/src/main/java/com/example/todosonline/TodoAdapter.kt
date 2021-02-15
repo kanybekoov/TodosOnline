@@ -42,6 +42,7 @@ class TodoAdapter : RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
         holder.binding.apply {
             val todo = todos[position]
             tvTitle.text = todo.title
+            tvId.text = todo.id.toString()
             chBoxView.isChecked = todo.completed
         }
     }
